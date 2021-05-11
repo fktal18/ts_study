@@ -7,10 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <button>add todo</button>
+  <div id="todo-app">
+    <div class="todo-bar">
+      <input type="text" placeholder="add sth todo">
+      <button>add todo</button>
+    </div>
+    <ul class="todo-container">
+
+    </ul>
+  </div>
   <script src="./require.js"></script>
   <script>
-    require(['../dist/fe/index.js'])
+    require([
+    '../dist/fe/todo_item',
+      '../dist/fe/todo_app',
+      '../dist/fe/index'
+    ])
   </script>
 </body>
 </html>
